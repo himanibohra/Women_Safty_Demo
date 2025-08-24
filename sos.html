@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS Alert - Personal Safety Device</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="sos-page">
+    <div class="container">
+        <div class="sos-header">
+            <div class="sos-icon">
+                <svg viewBox="0 0 100 100" width="100" height="100">
+                    <defs>
+                        <linearGradient id="sosGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:var(--autumn-cream);stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:var(--autumn-tan);stop-opacity:1" />
+                        </linearGradient>
+                        <filter id="glow">
+                            <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                            <feMerge> 
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <circle cx="50" cy="50" r="45" fill="url(#sosGradient)" stroke="var(--autumn-dark-brown)" stroke-width="3" filter="url(#glow)"/>
+                    <text x="50" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="var(--autumn-dark-brown)">SOS</text>
+                    <text x="50" y="55" text-anchor="middle" font-size="12" fill="var(--autumn-dark-brown)">ALERT</text>
+                    <path d="M30 70 L70 70 M40 75 L60 75 M45 80 L55 80" stroke="var(--autumn-dark-brown)" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <h1>🚨 SOS ALERT TRIGGERED 🚨</h1>
+        </div>
+        
+        <div class="user-info">
+            <h2>User Information</h2>
+            <div class="info-card">
+                <p><strong>Name:</strong> Priya Sharma</p>
+                <p><strong>Age:</strong> 19</p>
+                <p><strong>Phone:</strong> +91 98765 43210</p>
+                <p><strong>Emergency Contact:</strong> +91 98765 43211 (Parent)</p>
+            </div>
+        </div>
+        
+        <div class="location-details">
+            <h2>📍 Current Location Details</h2>
+            <div class="location-card">
+                <div class="location-info">
+                    <h3>Hawa Mahal Area, Jaipur</h3>
+                    <p><strong>Address:</strong> Hawa Mahal Rd, Badi Choupad, Pink City, Jaipur, Rajasthan 302002</p>
+                    <p><strong>Landmark:</strong> Near Hawa Mahal (Palace of Winds)</p>
+                    <p><strong>Coordinates:</strong> 26.9239° N, 75.8267° E</p>
+                    <p><strong>Area:</strong> Pink City (Old Jaipur)</p>
+                    <p><strong>Nearest Police Station:</strong> Kotwali Police Station (0.5 km)</p>
+                    <p><strong>Nearest Hospital:</strong> SMS Hospital (2.1 km)</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="map-container">
+            <h2>🗺️ Location Map</h2>
+            <div class="map-info">
+                <p><strong>Exact Location:</strong> Hawa Mahal Road, Pink City, Jaipur</p>
+                <p><strong>Map Reference:</strong> Centered on Hawa Mahal coordinates</p>
+            </div>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.8474567890123!2d75.8267!3d26.9239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4adf4c9e7209%3A0x14eac864c0b0b4b0!2sHawa%20Mahal!5e0!3m2!1sen!2sin!4v1703123456789!5m2!1sen!2sin"
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        
+        <div class="emergency-contacts">
+            <h2>🚨 Emergency Contacts</h2>
+            <div class="contacts-grid">
+                <div class="contact-card">
+                    <h3>🚔 Police</h3>
+                    <p><strong>Kotwali Police Station:</strong> 0141-256-0123</p>
+                    <p><strong>Emergency:</strong> 100</p>
+                    <p><strong>Distance:</strong> 0.5 km</p>
+                </div>
+                <div class="contact-card">
+                    <h3>🏥 Hospital</h3>
+                    <p><strong>SMS Hospital:</strong> 0141-256-0291</p>
+                    <p><strong>Emergency:</strong> 108</p>
+                    <p><strong>Distance:</strong> 2.1 km</p>
+                </div>
+                <div class="contact-card">
+                    <h3>🚒 Fire Station</h3>
+                    <p><strong>Central Fire Station:</strong> 0141-256-0111</p>
+                    <p><strong>Emergency:</strong> 101</p>
+                    <p><strong>Distance:</strong> 1.8 km</p>
+                </div>
+                <div class="contact-card">
+                    <h3>📞 Helpline</h3>
+                    <p><strong>Women Helpline:</strong> 1091</p>
+                    <p><strong>Child Helpline:</strong> 1098</p>
+                    <p><strong>24/7 Support:</strong> Available</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="back-button-container">
+            <button class="btn btn-back-home" onclick="goBack()">
+                <svg class="back-icon" viewBox="0 0 24 24" width="20" height="20">
+                    <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" fill="currentColor"/>
+                </svg>
+                <span>Back to Home</span>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Personal Safety Device</h3>
+                <p>Empowering women with advanced safety technology. Your security is our priority.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">📧</a>
+                    <a href="#" class="social-link">📱</a>
+                    <a href="#" class="social-link">🌐</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="safe.html">Safe Mode</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#help">Help Center</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Emergency Contacts</h3>
+                <ul>
+                    <li>🚨 Police: 100</li>
+                    <li>🚑 Ambulance: 108</li>
+                    <li>🔥 Fire: 101</li>
+                    <li>📞 Helpline: 1091</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#help">Help Center</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Personal Safety Device. All rights reserved. | Designed for Women's Safety</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

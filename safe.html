@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Mode - Personal Safety Device</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="safe-page">
+    <div class="container">
+        <div class="safe-header">
+            <div class="safe-icon">
+                <svg viewBox="0 0 100 100" width="100" height="100">
+                    <defs>
+                        <linearGradient id="safeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:var(--autumn-cream);stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:var(--autumn-tan);stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <rect x="20" y="30" width="60" height="40" rx="8" fill="url(#safeGradient)" stroke="var(--autumn-dark-brown)" stroke-width="3"/>
+                    <circle cx="35" cy="50" r="8" fill="var(--autumn-terracotta)"/>
+                    <circle cx="65" cy="50" r="8" fill="var(--autumn-terracotta)"/>
+                    <path d="M30 65 Q50 75 70 65" stroke="var(--autumn-dark-brown)" stroke-width="2" fill="none"/>
+                    <path d="M40 20 L40 30 M60 20 L60 30" stroke="var(--autumn-dark-brown)" stroke-width="3" stroke-linecap="round"/>
+                    <text x="50" y="85" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--autumn-dark-brown)">SAFE</text>
+                </svg>
+            </div>
+            <h1>✅ Device is in Safe Mode</h1>
+        </div>
+        
+        <div class="safe-message">
+            <div class="message-card">
+                <h2>Status: All Systems Normal</h2>
+                <p>User is safe and all monitoring systems are functioning properly.</p>
+                <div class="status-indicators">
+                    <div class="status-item">
+                        <span class="status-icon">🟢</span>
+                        <span>GPS Tracking: Active</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-icon">🟢</span>
+                        <span>Emergency Contacts: Ready</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-icon">🟢</span>
+                        <span>Battery: Optimal</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="back-button-container">
+            <button class="btn btn-back-home" onclick="goBack()">
+                <svg class="back-icon" viewBox="0 0 24 24" width="20" height="20">
+                    <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" fill="currentColor"/>
+                </svg>
+                <span>Back to Home</span>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Personal Safety Device</h3>
+                <p>Empowering women with advanced safety technology. Your security is our priority.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">📧</a>
+                    <a href="#" class="social-link">📱</a>
+                    <a href="#" class="social-link">🌐</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sos.html">SOS Page</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#help">Help Center</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Emergency Contacts</h3>
+                <ul>
+                    <li>🚨 Police: 100</li>
+                    <li>🚑 Ambulance: 108</li>
+                    <li>🔥 Fire: 101</li>
+                    <li>📞 Helpline: 1091</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#help">Help Center</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Personal Safety Device. All rights reserved. | Designed for Women's Safety</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
